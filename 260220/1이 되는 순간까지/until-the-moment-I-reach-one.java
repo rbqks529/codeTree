@@ -4,21 +4,21 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         
-        System.out.println(fun(n));
+        System.out.println(fun(n) - 1);
     }
 
     public static int fun(int n){
         int next;
         int count = 1;
 
+        if(n == 1){
+            return count;
+        }  
+        
         if(n % 2 == 0){
             next = n/2;
         } else {
             next = n/3;
-        }
-
-        if(next == 1){
-            return count;
         }
 
         return count + fun(next);
