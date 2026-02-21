@@ -9,7 +9,7 @@ public class Main {
             int input = sc.nextInt();
             arr.add(input);
 
-            if(input % 2 != 0){
+            if(i % 2 == 0){
                 Collections.sort(arr);
 
                 System.out.print(arr.get(arr.size()/2) + " ");
