@@ -18,7 +18,7 @@ public class Main {
         if(minuteDiff > 0){
             System.out.println(dayDiff * 24 * 60 + hourDiff * 60 + minuteDiff);
         } else {
-            System.out.println(dayDiff * 24 * 60 + hourDiff * 60 + minuteDiff + 60);
+            System.out.println(dayDiff * 24 * 60 + (hourDiff-1) * 60 + minuteDiff + 60);
         }
     }
 }
