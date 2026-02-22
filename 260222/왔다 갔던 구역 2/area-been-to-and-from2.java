@@ -17,8 +17,8 @@ public class Main {
                 }
             } else {
                 for(int j=0; j<x; j++){
-                    count[index]++;
                     index--;
+                    count[index]++;
                 }
             }
         }
