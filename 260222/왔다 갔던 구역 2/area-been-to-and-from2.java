@@ -12,11 +12,13 @@ public class Main {
 
             if(d == 'R'){
                 for(int j=0; j<x; j++){
-                    count[index++]++;
+                    count[index]++;
+                    index++;
                 }
             } else {
                 for(int j=0; j<x; j++){
-                    count[index--]++;
+                    count[index]++;
+                    index--;
                 }
             }
         }
